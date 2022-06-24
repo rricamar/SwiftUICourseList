@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var courses: [Course] = []
+
     var body: some View {
         Text("Hello, world!")
             .padding()
@@ -13,20 +15,33 @@ struct ContentView: View {
             request.httpMethod = "GET"
 
             URLSession.shared.dataTask(with: request) { (data, response, error) in
-                onCourses(error, data)
+                onCourses(data, error)
             }.resume()
         }
     }
 
-    fileprivate func onCourses(_ error: Error?, _ data: Data?) {
+    fileprivate func onCourses(_ data: Data?, _ error: Error?) {
         if error != nil {
             print("There was an error")
         }
 
         if data != nil {
-            print(String(data: data!, encoding: .utf8))
+            setCoursesFromData(data)
         }
     }
+
+    fileprivate func setCoursesFromData(_ data: Data?) {
+        if let coursesFromApi = try? JSONDecoder().decode([Course].self, from: data!) {
+            courses = coursesFromApi
+        }
+    }
+}
+
+struct Course: Codable, Identifiable {
+    var id: Int
+    var title: String
+    var subtitle: String
+    var image: String
 }
 
 struct ContentView_Previews: PreviewProvider {
