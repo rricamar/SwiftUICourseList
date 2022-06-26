@@ -1,10 +1,3 @@
-//
-//  CourseListApp.swift
-//  CourseList
-//
-//  Created by Ruben Sopra on 24/6/22.
-//
-
 import SwiftUI
 
 @main
