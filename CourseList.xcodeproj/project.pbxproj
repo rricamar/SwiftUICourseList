@@ -14,6 +14,7 @@
 		8B532D472865BBF400D35DEA /* CourseListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B532D462865BBF400D35DEA /* CourseListTests.swift */; };
 		8B532D512865BBF400D35DEA /* CourseListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B532D502865BBF400D35DEA /* CourseListUITests.swift */; };
 		8B532D532865BBF400D35DEA /* CourseListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B532D522865BBF400D35DEA /* CourseListUITestsLaunchTests.swift */; };
+		8B532D602868BA1300D35DEA /* CourseTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B532D5F2868BA1300D35DEA /* CourseTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8B532D4C2865BBF400D35DEA /* CourseListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B532D502865BBF400D35DEA /* CourseListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListUITests.swift; sourceTree = "<group>"; };
 		8B532D522865BBF400D35DEA /* CourseListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B532D5F2868BA1300D35DEA /* CourseTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				8B532D352865BBF000D35DEA /* CourseListApp.swift */,
 				8B532D372865BBF000D35DEA /* ContentView.swift */,
+				8B532D5F2868BA1300D35DEA /* CourseTileView.swift */,
 				8B532D392865BBF300D35DEA /* Assets.xcassets */,
 				8B532D3B2865BBF300D35DEA /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				8B532D382865BBF000D35DEA /* ContentView.swift in Sources */,
 				8B532D362865BBF000D35DEA /* CourseListApp.swift in Sources */,
+				8B532D602868BA1300D35DEA /* CourseTileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
